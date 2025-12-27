@@ -1,0 +1,59 @@
+##Arrays in python
+
+
+#usimg the list as ana array as python don't support arrays 
+
+river = ["ganga","narmada","sutluj","luni"]
+
+#loop all the element
+for i in river:
+    print(i,end="   ")
+# finding the length of the array
+print("\n")
+print(len(river))
+river.remove("ganga")
+print(river)
+river.reverse()
+print(river)
+river.pop(1)
+print(river)
+river.count("ganga")
+print(river)
+river.copy()
+print(river)
+l1=[1,2,3,4,5]
+l2=[6,7,8,9]
+l1.extend(l2)
+print(l1)
+x = river.index("narmada")
+print(x)
+l3 = [3,17,78,8,1,3,2]
+l3.sort()
+print(l3)
+l3.sort(reverse=True)
+print(l3)
+l3.insert(2,"river")
+print(l3)
+l3.clear()
+print(l3)
+print(l3)
+
+
+output:--
+ganga   narmada   sutluj   luni   
+
+4
+['narmada', 'sutluj', 'luni']
+['luni', 'sutluj', 'narmada']
+['luni', 'narmada']
+['luni', 'narmada']
+['luni', 'narmada']
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+1
+[1, 2, 3, 3, 8, 17, 78]
+[78, 17, 8, 3, 3, 2, 1]
+[78, 17, 'river', 8, 3, 3, 2, 1]
+[]
+[]
+
+
